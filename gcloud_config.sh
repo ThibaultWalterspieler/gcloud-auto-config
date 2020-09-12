@@ -11,7 +11,7 @@ do
 done
 
 # Add  Create new config option & Quit
-configList+=("New" "Quit")
+configList+=("Create new configuration" "Quit")
 
 select selectedEnv in "${configList[@]}"; do
     for i in "${!configList[@]}" 
@@ -22,7 +22,7 @@ select selectedEnv in "${configList[@]}"; do
                 then 
                     printf "Bye bye 👋"
                     exit
-                elif [[ ${configList[i]} == "New" ]]
+                elif [[ ${configList[i]} == "Create new configuration" ]]
                 then 
                     while true; do
                         printf -- "Registred Google Accounts"
