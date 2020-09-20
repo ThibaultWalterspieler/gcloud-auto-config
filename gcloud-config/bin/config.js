@@ -2,6 +2,7 @@
 const { exec } = require('child_process');
 const shellParser = require('node-shell-parser');
 const fs = require('fs');
+const ini = require('ini');
 
 class Config {
   static get signature() {
@@ -48,21 +49,8 @@ class Config {
 
   async getCurrentConfig(path, configName) {
     return new Promise((resolve, reject) => {
-      const currentConfig = fs.readFileSync(
-        `${path}/configurations/config_${configName}`,
-        'utf8'
-      );
-      console.log(
-        currentConfig
-          .split('[core]')
-          .join('')
-          .split('[account]')
-          .join('')
-          .split('[compute]')
-          .join('')
-          .trim()
-          .replace(/=/g, ':')
-          .replace(/^\s*$(?:\r\n?|\n)/gm, '')
+      let currentConfig = ini.parse(
+        fs.readFileSync(`${path}/configurations/config_${configName}`, 'utf8')
       );
       resolve(currentConfig ? currentConfig : {});
     });
