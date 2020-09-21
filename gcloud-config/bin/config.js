@@ -1,15 +1,14 @@
 'use strict';
-const { exec } = require('child_process');
-const shellParser = require('node-shell-parser');
-const fs = require('fs');
-const ini = require('ini');
+import { exec } from 'child_process';
+import fs from 'fs';
+import ini from 'ini';
 
 class Config {
   static get signature() {
-    return `ask`;
+    return `config`;
   }
   static get description() {
-    return 'Ask user to select gcp project or other';
+    return 'Get GCP config of the user';
   }
 
   getCgpPath() {
