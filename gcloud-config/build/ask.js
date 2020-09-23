@@ -63,7 +63,7 @@ var Ask = /*#__PURE__*/function () {
             gcp.gcpCreateConfig(_index["default"].mails);
             var mailQuestion = [{
               type: 'list',
-              name: 'Mails',
+              name: 'Mail',
               message: 'Which mail do you want to use ?',
               choices: [],
               filter: function filter(val) {

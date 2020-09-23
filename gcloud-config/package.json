@@ -1,21 +1,20 @@
 {
   "name": "gcloud-config",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha",
   "description": "",
   "main": "bin/index.js",
   "scripts": {
     "start": "nodemon --exec babel-node ./bin/index.js",
     "build": "babel bin -d build",
-    "test": "npm run build && npm i -g"
+    "test": "npm run build && npm i -g && gcp-config"
   },
   "keywords": [],
-  "author": "Thibault Walterspieler",
+  "author": "Thibault Walterspieler (https://github.com/ThibaultWalterspieler)",
   "license": "MIT",
   "bin": {
-    "cgp-config": "./build/index.js"
+    "gcp-config": "./build/index.js"
   },
   "dependencies": {
-    "@babel/runtime": "^7.11.2",
     "chalk": "^4.1.0",
     "cli-table": "^0.3.1",
     "ini": "^1.3.5",
@@ -23,6 +22,7 @@
     "yargs": "^16.0.3"
   },
   "devDependencies": {
+    "@babel/runtime": "^7.11.2",
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "@babel/node": "^7.10.5",
