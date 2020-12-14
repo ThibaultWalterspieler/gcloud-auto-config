@@ -1,6 +1,6 @@
 <div align="center">
     <a href="https://github.com/ThibaultWalterspieler/gcloud-auto-config">
-       <img  width="400" src="https://github.com/ThibaultWalterspieler/gcloud-auto-config/blob/clean-repo/.github/assets/GCLOUD-CONFIG.svg?sanitize=true"/>
+       <img  width="400" src="https://github.com/ThibaultWalterspieler/gcloud-config/blob/clean-repo/.github/assets/GCLOUD-CONFIG.svg?sanitize=true"/>
     </a>
 </div>
 <br/>
