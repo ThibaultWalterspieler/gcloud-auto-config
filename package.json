@@ -1,8 +1,8 @@
 {
   "name": "gcloud-config",
   "version": "0.2.0-beta",
-  "description": "",
-  "main": "bin/index.js",
+  "description": "gcloud-config CLI provides a simple command to list, create, switch and set gcloud-configs.",
+  "main": "build/index.js",
   "scripts": {
     "start": "nodemon --exec babel-node ./src/index.js",
     "build": "babel src -d build",
@@ -13,9 +13,7 @@
     "google-cloud-platform",
     "cli-tool"
   ],
-  "repository": {
-    "url": "https://github.com/ThibaultWalterspieler/gcloud-auto-config"
-  },
+  "repository": "https://github.com/ThibaultWalterspieler/gcloud-auto-config",
   "author": "Thibault Walterspieler (https://github.com/ThibaultWalterspieler)",
   "license": "MIT",
   "bin": {
@@ -29,12 +27,12 @@
     "yargs": "^16.0.3"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.11.2",
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "@babel/node": "^7.10.5",
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
+    "@babel/runtime": "^7.11.2",
     "nodemon": "^2.0.4"
   }
 }
