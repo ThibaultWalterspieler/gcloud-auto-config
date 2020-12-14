@@ -1,10 +1,12 @@
-[![NPM](https://nodei.co/npm/gcloud-config.png?compact=true)](https://www.npmjs.com/package/gcloud-config)
+[![npm][npm]][npm-url]
 
-# gcloud-auto-config
+## About
 
-## Installation
+gcloud-config CLI provides a simple command to list, create, switch and set [gcloud-config](https://cloud.google.com/sdk/gcloud/reference/config).
 
-With npm:
+## How to install
+
+With npm :
 
 ```
 npm install gcloud-config -g
@@ -12,8 +14,11 @@ npm install gcloud-config -g
 
 ## Usage
 
-Lauch gcp-config:
+After installing the package, launch gcp-config :
 
 ```
 gcp-config
 ```
+
+[npm]: https://img.shields.io/npm/v/gcloud-config.svg
+[npm-url]: https://www.npmjs.com/package/gcloud-config

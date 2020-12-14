@@ -1,14 +1,21 @@
 {
   "name": "gcloud-config",
-  "version": "1.0.0-alpha",
+  "version": "0.1.0-beta",
   "description": "",
   "main": "bin/index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node ./bin/index.js",
-    "build": "babel bin -d build",
+    "start": "nodemon --exec babel-node ./src/index.js",
+    "build": "babel src -d build",
     "test": "npm run build && npm i -g && gcp-config"
   },
-  "keywords": [],
+  "keywords": [
+    "gcp",
+    "google-cloud-platform",
+    "cli-tool"
+  ],
+  "repository": {
+    "url": "https://github.com/ThibaultWalterspieler/gcloud-auto-config"
+  },
   "author": "Thibault Walterspieler (https://github.com/ThibaultWalterspieler)",
   "license": "MIT",
   "bin": {

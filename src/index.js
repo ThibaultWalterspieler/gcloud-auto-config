@@ -1,10 +1,8 @@
 #!/usr/bin/env node
 
-import yargs from 'yargs';
-import chalk from 'chalk';
-import Config from './config';
-import Ask from './Ask';
 import Table from 'cli-table';
+import Ask from './Ask';
+import Config from './config';
 
 const config = new Config();
 const ask = new Ask();
@@ -47,7 +45,7 @@ async function getConfig() {
     configData.path,
     configData.currentConfig
   );
-  //   console.log(configData);
+
   console.log(`You're current configuration :`);
   table.push(
     ['Account', 'Project', 'Region'],
