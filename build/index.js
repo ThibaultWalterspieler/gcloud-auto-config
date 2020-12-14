@@ -12,15 +12,11 @@ var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"))
 
 var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/asyncToGenerator"));
 
-var _yargs = _interopRequireDefault(require("yargs"));
-
-var _chalk = _interopRequireDefault(require("chalk"));
-
-var _config = _interopRequireDefault(require("./config"));
+var _cliTable = _interopRequireDefault(require("cli-table"));
 
 var _Ask = _interopRequireDefault(require("./Ask"));
 
-var _cliTable = _interopRequireDefault(require("cli-table"));
+var _config = _interopRequireDefault(require("./config"));
 
 var config = new _config["default"]();
 var ask = new _Ask["default"]();
@@ -89,7 +85,6 @@ function _getConfig() {
 
           case 16:
             configData.currentConfigData = _context2.sent;
-            //   console.log(configData);
             console.log("You're current configuration :");
             table.push(['Account', 'Project', 'Region'], [configData.currentConfigData.core.account, configData.currentConfigData.core.project, configData.currentConfigData.compute.region]);
             console.log(table.toString() + '\n');
