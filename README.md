@@ -1,8 +1,15 @@
+<div align="center">
+    <a href="https://github.com/ThibaultWalterspieler/gcloud-auto-config">
+       <img  width="400" src="https://github.com/ThibaultWalterspieler/gcloud-auto-config/blob/clean-repo/.github/assets/GCLOUD-CONFIG.svg?sanitize=true"/>
+    </a>
+</div>
+<br/>
+
 [![npm][npm]][npm-url]
 
 ## About
 
-gcloud-config CLI provides a simple command to list, create, switch and set [gcloud-config](https://cloud.google.com/sdk/gcloud/reference/config).
+**gcloud-config** CLI provides a simple command to list, create, switch and set [gcloud-configs](https://cloud.google.com/sdk/gcloud/reference/config).
 
 ## How to install
 
