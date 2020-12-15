@@ -1,6 +1,6 @@
 {
   "name": "gcloud-config",
-  "version": "0.2.1-beta",
+  "version": "0.2.3-beta",
   "description": "gcloud-config CLI provides a simple command to list, create, switch and set gcloud-configs.",
   "main": "./lib/index.js",
   "bin": {
@@ -8,9 +8,12 @@
   },
   "scripts": {
     "start": "nodemon --exec babel-node ./src/index.js",
-    "build": "babel src -d lib",
+    "build": "npm run clean:some && babel src -d lib",
     "publish-package": "npm run build && npm publish --access public",
-    "test": "npm run build && npm i && gcp-config"
+    "test": "npm run build && npm i && gcp-config",
+    "clean:some": "rm -rf ./lib",
+    "clean:all": "rm -rf ./node_modules ./package-lock.json ./lib ./docs",
+    "refresh": "npm run clean:all && npm install"
   },
   "keywords": [
     "gcp",
