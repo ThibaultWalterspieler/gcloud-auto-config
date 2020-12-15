@@ -19,6 +19,12 @@ With npm :
 npm install gcloud-config -g
 ```
 
+With yarn :
+
+```
+yarn add gcloud-config
+```
+
 ## Usage
 
 After installing the package, launch gcp-config :
