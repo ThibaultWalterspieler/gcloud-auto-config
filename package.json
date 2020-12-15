@@ -1,6 +1,6 @@
 {
   "name": "gcloud-config",
-  "version": "0.2.2-beta",
+  "version": "0.2.3-beta",
   "description": "gcloud-config CLI provides a simple command to list, create, switch and set gcloud-configs.",
   "main": "./lib/index.js",
   "bin": {
