@@ -13,13 +13,13 @@
 
 ## How to install
 
-With npm :
+With ***npm*** :
 
 ```
 npm install gcloud-config -g
 ```
 
-With yarn :
+With ***yarn*** :
 
 ```
 yarn add gcloud-config
